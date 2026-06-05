@@ -1,0 +1,8 @@
+@theme "./themes/matugen.rasi"
+configuration {
+  modi: "window,drun,ssh,combi";
+  matching: "normal";
+  sort: true;
+  sorting-method: "fzf";
+  font: "Hack Nerd Font 12";
+}

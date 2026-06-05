@@ -1,0 +1,327 @@
+@import "colors.css";
+
+* {
+  /* `otf-font-awesome` is required to be installed for icons */
+  font-family:
+    "NotoSans Nerd Font", "Hack Nerd Font", "Helvetica Nerd Font",
+    "Arial Nerd Font", sans-serif;
+  font-size: 18px;
+  border-radius: 15px;
+}
+
+window#waybar {
+  background: linear-gradient(
+    90deg,
+    alpha(@background, 0.5) 0%,
+    alpha(@color8, 0.5) 38%,
+    alpha(@color8, 0.5) 62%,
+    alpha(@background, 0.5) 100%
+  );
+  border: none;
+  border-radius: 30px;
+  transition-property: background-color;
+  transition-duration: 1s;
+  color: @source_color;
+}
+
+window#waybar.hidden {
+  opacity: 0.2;
+}
+
+/*
+window#waybar.empty {
+    background-color: inherit;
+}
+window#waybar.solo {
+    background-color: #FFFFFF;
+}
+*/
+
+button {
+  /* Use box-shadow instead of border so the text isn't offset */
+  box-shadow: inset 0 -3px transparent;
+  /* Avoid rounded borders under each button name */
+  border: none;
+  font-size: 20px;
+  border-radius: 0;
+}
+
+/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
+button:hover {
+  background: inherit;
+  box-shadow: inset 0 -3px #ffffff;
+}
+
+#workspaces {
+  padding-left: 10px;
+}
+
+#workspaces button {
+  padding: 0 5px;
+  background-color: inherit;
+  color: inherit;
+  border-radius: 5px;
+}
+
+#workspaces button:hover {
+  background: @color2;
+}
+
+#workspaces button.active {
+  background: @color8;
+  color: inherit;
+}
+
+#workspaces button.focused {
+  background-color: #64727d;
+  box-shadow: inset 0 -3px #ffffff;
+}
+
+#workspaces button.urgent {
+  background-color: #eb4d4b;
+}
+
+#mode {
+  background-color: #64727d;
+  border-bottom: 3px solid #ffffff;
+}
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#wireplumber,
+#custom-media,
+#tray,
+#mode,
+#idle_inhibitor,
+#scratchpad,
+#custom-protonmail,
+#mpd {
+  padding: 0 0px;
+  color: #ffffff;
+}
+
+#window,
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left>widget:first-child>#workspaces {
+  margin-left: 0;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right > widget:last-child > #workspaces {
+  margin-right: 0;
+}
+
+#clock {
+  background-color: inherit;
+  padding: 5px 0 0 0;
+  font-family: "Ticking Timebomb BB";
+  font-size: 35px;
+  color: inherit;
+}
+
+@keyframes blink {
+  to {
+    background-color: #ffffff;
+    color: #000000;
+  }
+}
+
+label:focus {
+  color: #000000;
+}
+
+#battery {
+  background-color: inherit;
+  color: inherit;
+}
+
+#cpu {
+  color: inherit;
+  padding: 0px 5px;
+}
+
+#memory {
+  color: inherit;
+  padding: 0px 5px;
+}
+
+#disk {
+  color: inherit;
+}
+
+#backlight {
+  color: inherit;
+  background-color: inherit;
+}
+
+#network {
+  background-color: #2980b9;
+}
+
+#network.disconnected {
+  background-color: #f53c3c;
+}
+
+#pulseaudio {
+  color: inherit;
+  padding-left: 5px;
+}
+
+#pulseaudio.muted {
+  background-color: #90b1b1;
+  color: #2a5c45;
+}
+
+#wireplumber {
+  background-color: #fff0f5;
+  color: #000000;
+}
+
+#wireplumber.muted {
+  background-color: #f53c3c;
+}
+
+#custom-media {
+  background-color: #66cc99;
+  color: #2a5c45;
+  min-width: 100px;
+}
+
+#custom-media.custom-spotify {
+  background-color: #66cc99;
+}
+
+#custom-media.custom-vlc {
+  background-color: #ffa000;
+}
+
+#temperature {
+  color: inherit;
+  padding: 0px 5px;
+}
+
+#temperature.critical {
+  background-color: #eb4d4b;
+}
+
+#tray {
+  background-color: transparent;
+  padding-right: 15px;
+}
+
+#tray > .passive {
+  -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+  -gtk-icon-effect: highlight;
+  background-color: #eb4d4b;
+}
+
+#idle_inhibitor {
+  color: inherit;
+  padding-right: 5px;
+}
+
+#idle_inhibitor.activated {
+  background-color: inherit;
+  color: inherit;
+}
+
+#mpd {
+  color: inherit;
+}
+
+#mpd.disconnected {
+  background-color: #f53c3c;
+}
+
+#mpd.stopped {
+  background-color: #90b1b1;
+}
+
+#mpd.paused {
+  background-color: #51a37a;
+}
+
+#language {
+  background: #00b093;
+  color: #740864;
+  padding: 0 5px;
+  margin: 0 5px;
+  min-width: 16px;
+}
+
+#keyboard-state {
+  background: #97e1ad;
+  color: #000000;
+  padding: 0 0px;
+  margin: 0 5px;
+  min-width: 16px;
+}
+
+#keyboard-state > label {
+  padding: 0 5px;
+}
+
+#keyboard-state > label.locked {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+#scratchpad {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+#scratchpad.empty {
+  background-color: inherit;
+}
+
+#network.speed,
+#custom-network-speed {
+  min-width: 190px;
+  background-color: inherit;
+  color: inherit;
+  padding: 0 0px;
+  margin: 0 0px;
+}
+
+#network.dlSpeed,
+#network.ulSpeed {
+  background-color: inherit;
+  color: inherit;
+  min-width: 100px;
+  padding: 0 10px;
+}
+
+#backlight-slider slider {
+  min-height: 0px;
+  min-width: 0px;
+  opacity: 0;
+  background-image: none;
+  border: none;
+  box-shadow: none;
+}
+
+#backlight-slider trough {
+  min-height: 80px;
+  min-width: 10px;
+  border-radius: 5px;
+  background-color: black;
+}
+
+#backlight-slider highlight {
+  min-width: 10px;
+  border-radius: 5px;
+  background-color: red;
+}
+#drawer {
+  padding: 0 15px;
+}
