@@ -90,7 +90,7 @@ index = 1
 
 # Defaults to the type from CLI if unspecified.
 # One of `SchemeContent`, `SchemeExpressive`, `SchemeFidelity`, `SchemeFruitSalad`, `SchemeMonochrome`, `SchemeNeutral`, `SchemeRainbow`, `SchemeTonalSpot`, `SchemeVibrant`
-type = "SchemeFidelity"
+type = "SchemeTonalSpot"
 
 # For testing of the `--continue-on-error` flag
 # [templates.ishoulderror]

@@ -1,9 +1,9 @@
 * {
-    background-color: rgba(48, 37, 36, 0);
+    background-color: rgba(47, 38, 40, 0.85);
     highlight:     bold #ffffff;
 }
 window {
-    background-color: rgba(48, 37, 36, 0.5);
+    background-color: rgba(47, 38, 40, 0.85);
     border-radius: 0 15mm 15mm 0;
 
     padding: 10mm;
@@ -11,7 +11,7 @@ window {
     height: 90%;
     width: 125mm;
     border: 3px 3px 3px 0;
-    border-color: #e72d28;
+    border-color: #f2508d;
     text-color: #ffffff;
 
     location: west;
@@ -19,7 +19,7 @@ window {
 }
 inputbar {
     background-color: transparent;
-    text-color:       #eed7d4;
+    text-color:       #ecd7db;
     children: [prompt, entry, textbox-end];
     spacing: 1mm;
 }
@@ -33,10 +33,10 @@ textbox-end {
   expand: false;
 }
 entry {
-  background-color: #534341;
+  background-color: #514346;
 }
 prompt, entry, textbox-end, num-filtered-rows {
-  background-color: #4d4240;
+  background-color: #4c4244;
   text-color: inherit;
   padding: 2mm;
   vertical-align: 0.5;
@@ -47,7 +47,7 @@ element {
 }
 textbox-current-entry {
     border-radius: 5mm;
-    background-color: #cc7b71;
+    background-color: #c67b90;
     text-color: #000000;
     placeholder: "n/a";
     padding: 2mm;
@@ -82,11 +82,11 @@ listview {
     flow: horizontal;
 }
 element selected  normal {
-    background-color: #ffd2cc;
-    text-color: #48130f;
+    background-color: #ffd0db;
+    text-color: #471226;
 }
 element normal active {
-    text-color: #f6d9a0;
+    text-color: #ffd4b1;
 }
 element normal urgent {
     text-color: #ffd2cc;
@@ -94,13 +94,13 @@ element normal urgent {
 element alternate normal {
 }
 element alternate active {
-    text-color: #f6d9a0;
+    text-color: #ffd4b1;
 }
 element alternate urgent {
     text-color: #ff5449;
 }
 element selected active {
-    background-color: #a78e5b;
+    background-color: #b38861;
     text-color: #000000;
 }
 element selected urgent {
