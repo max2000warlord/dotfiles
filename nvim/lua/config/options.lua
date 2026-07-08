@@ -3,6 +3,8 @@
 -- Add any additional options here
 vim.wo.number = true
 vim.wo.relativenumber = true
+vim.g.clipboard = "wl-copy"
+vim.opt.clipboard = "unnamedplus"
 vim.g.neovide_opacity = 0.5
 vim.g.markdown_fenced_languages = {
   "ts=typescript",

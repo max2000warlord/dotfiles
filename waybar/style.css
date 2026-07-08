@@ -10,13 +10,14 @@
 }
 
 window#waybar {
-  background: linear-gradient(
+  /*background: linear-gradient(
     90deg,
     alpha(@background, 0.5) 0%,
     alpha(@color8, 0.5) 38%,
     alpha(@color8, 0.5) 62%,
     alpha(@background, 0.5) 100%
-  );
+  );*/
+  background: transparent;
   border: none;
   border-radius: 30px;
   transition-property: background-color;
@@ -160,6 +161,7 @@ label:focus {
 #backlight {
   color: inherit;
   background-color: inherit;
+  padding: 0px 5px;
 }
 
 #network {
@@ -172,7 +174,7 @@ label:focus {
 
 #pulseaudio {
   color: inherit;
-  padding-left: 5px;
+  padding: 0 5px;
 }
 
 #pulseaudio.muted {
@@ -205,7 +207,7 @@ label:focus {
 
 #temperature {
   color: inherit;
-  padding: 0px 5px;
+  padding-right: 5px;
 }
 
 #temperature.critical {
@@ -228,7 +230,7 @@ label:focus {
 
 #idle_inhibitor {
   color: inherit;
-  padding-right: 5px;
+  padding: 0 5px;
 }
 
 #idle_inhibitor.activated {
@@ -323,5 +325,5 @@ label:focus {
   background-color: red;
 }
 #drawer {
-  padding: 0 15px;
+  padding: 0 5px;
 }

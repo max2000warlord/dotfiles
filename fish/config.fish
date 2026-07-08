@@ -1,5 +1,3 @@
-set fish_greeting
-set fish_key_bindings fish_default_key_bindings
 if status is-interactive
 end
 
@@ -7,9 +5,12 @@ if test -z "$DBUS_SESSION_BUS_ADDRESS"
     set -gx DBUS_SESSION_BUS_ADDRESS "unix:path=$XDG_RUNTIME_DIR/bus"
 end
 
-sleep 0.075 && fastfetch
-
+set fish_greeting
+set fish_key_bindings fish_default_key_bindings
+set -U tide_os_icon \uf31f
 zoxide init fish | source
+fastfetch
+
 ################################
 #####       ALIASES       ######
 ################################
@@ -48,10 +49,16 @@ set -U fish_user_paths $HOME/.local/bin $fish_user_paths
 set -U fish_user_paths $HOME/.local/scripts/ $fish_user_paths
 set -U EDITOR nvim
 set MANPATH $NPM_PACKAGES/share/man $MANPATH
-set -x GDK_BACKEND wayland
-set -x XDG_SESSION_TYPE wayland
 set -x SSH_AUTH_SOCK (ssh-agent)
 set -gx GPG_TTY (tty)
+
+#######################
+###  ENV stuff etc. ###
+#######################
+
+if test "$XDG_SESSION_TYPE" = wayland
+    set -x GDK_BACKEND wayland
+end
 
 # bun
 set --export BUN_INSTALL "$HOME/.bun"

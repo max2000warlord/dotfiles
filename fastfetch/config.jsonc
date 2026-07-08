@@ -1,0 +1,118 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "type": "kitty",
+    "source": "/home/max/.config/fastfetch/Artix/artix-moreblue.png",
+    "height": 17,
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "left": 0
+    }
+  },
+  "display": {
+    "separator": ""
+  },
+  "modules": [
+    //{
+    //  "type": "custom", // HardwareStart
+    //  "format": "\u001b[38;2;16;175;223m        ╒════════════════════╕\u001b[0m"
+    //},
+    //{
+    //  "type": "custom", // HardwareStart
+    //  "format": "\u001b[38;2;16;175;223m        │\u001b[1;34mHardware Information\u001b[38;2;16;175;223m│\u001b[0m"
+    //},
+    //{
+    //  "type": "custom", // HardwareStart
+    //  "format": "\u001b[38;2;16;175;223m        ╘════════════════════╛\u001b[0m"
+    //},
+    {
+      "type": "custom",
+      "key": "\n"
+    },
+    {
+      "type": "cpu",
+      "key": "\u001b[38;2;231;248;253m \u001b[38;2;255;255;255m \u001b[0m",
+      "format": "{1} @ {7}"
+    },
+    {
+      "type": "gpu",
+      "key": "\u001b[38;2;188;236;250m󰾲 \u001b[38;2;255;255;255m \u001b[0m",
+      "format": "{1} {2}"
+    },
+    {
+      "type": "disk",
+      "key": "\u001b[38;2;145;224;247m󰋊 \u001b[38;2;255;255;255m \u001b[0m" // Green color for disk icon,
+    },
+    {
+      "type": "memory",
+      "key": "\u001b[38;2;102;211;244m \u001b[38;2;255;255;255m \u001b[0m"
+    },
+    {
+      "type": "display",
+      "key": "\u001b[38;2;59;199;241m󰍹 \u001b[38;2;255;255;255m \u001b[0m",
+      "format": "{1}×{2} @ {3}Hz in {12}\" [{7}]"
+    },
+    {
+      "type": "battery",
+      "key": "\u001b[38;2;16;175;223m󰄌 \u001b[38;2;255;255;255m \u001b[0m",
+      "format": "{4} [{5}]"
+    },
+    //{
+    //  "type": "custom", // HardwareStart
+    //  "format": "\u001b[38;2;16;175;223m        ╒════════════════════╕\u001b[0m"
+    //},
+    //{
+    //  "type": "custom", // SoftwareStart
+    //  "format": "\u001b[38;2;16;175;223m        │\u001b[1;34mSoftware Information\u001b[38;2;16;175;223m│\u001b[0m"
+    //},
+    //{
+    //  "type": "custom", // HardwareStart
+    //  "format": "\u001b[38;2;16;175;223m        ╘════════════════════╛\u001b[0m"
+    //},
+    {
+      "type": "title",
+      "key": "\u001b[38;2;16;175;223m\u001b[38;2;255;255;255m  \u001b[0m",
+      "format": "{1}@{2}"
+    },
+    //{
+    //  "type": "os",
+    //  //Find your distro's logo at https://www.nerdfonts.com/cheat-sheet
+    //  "key": "\u001b[38;2;16;175;223m\u001b[38;2;255;255;255m  \u001b[0m",
+    //  "format": "{3}",
+    //},
+    {
+      "type": "kernel",
+      "key": "\u001b[38;2;16;175;223m\u001b[38;2;255;255;255m  \u001b[0m",
+      "format": "{2}"
+    },
+    {
+      "type": "initsystem",
+      "key": "\u001b[38;2;16;175;223m \u001b[38;2;255;255;255m  󱞪 \u001b[0m",
+      "format": "{1} v{3}"
+    },
+    {
+      "type": "wm",
+      "key": "\u001b[38;2;0;164;245m󱂬\u001b[38;2;255;255;255m  \u001b[0m",
+      "format": "{2} v{5}"
+    },
+    {
+      "type": "terminal",
+      "key": "\u001b[38;2;59;199;241m\u001b[38;2;255;255;255m  \u001b[0m",
+      "format": "{5}"
+    },
+    {
+      "type": "shell",
+      "key": "\u001b[38;2;16;175;223m \u001b[38;2;255;255;255m  󱞪 \u001b[0m"
+    },
+    {
+      "type": "packages",
+      "key": "\u001b[38;2;255;204;0m󰮯\u001b[38;2;255;255;255m  \u001b[0m"
+    },
+    {
+      "type": "wifi",
+      "key": "\u001b[38;2;255;255;255m  \u001b[0m",
+      "format": "\u001b[38;2;255;0;0mREDACTED\u001b[0m"
+    }
+  ]
+}

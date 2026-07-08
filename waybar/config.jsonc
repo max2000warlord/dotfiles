@@ -22,10 +22,10 @@
     "modules-center": ["network#ulSpeed", "clock", "network#dlSpeed"],
     "modules-right": [
       "group/drawer",
-      "pulseaudio",
-      "custom/media",
       "idle_inhibitor",
       "backlight",
+      "pulseaudio",
+      "custom/media",
       "custom/power",
       "tray"
     ],
@@ -114,8 +114,8 @@
     "idle_inhibitor": {
       "format": "{icon}",
       "format-icons": {
-        "activated": " ",
-        "deactivated": " "
+        "activated": "",
+        "deactivated": ""
       }
     },
     "tray": {
@@ -129,11 +129,11 @@
       "format-alt": "{:%d:%m:%y}"
     },
     "cpu": {
-      "format": "{usage}%",
+      "format": " {usage}%",
       "tooltip": false
     },
     "memory": {
-      "format": " {}%"
+      "format": "  {}%"
     },
     "temperature": {
       // "thermal-zone": 2,

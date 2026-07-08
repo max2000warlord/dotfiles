@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   height="183.18401"
+   viewBox="0 0 46.761262 48.467437"
+   width="176.73549"
+   version="1.1"
+   xmlns="http://www.w3.org/2000/svg">
+  <g transform="translate(-21.622071,-22.756188)">
+    <!-- Main geometric paths as wireframe outlines -->
+    <path
+       d="M 45.002437,22.756188 36.759215,39.657766 59.445581,52.368814 Z M 34.268966,44.763923 21.622071,70.694454 59.149736,55.190427 Z m 27.655732,12.688241 -11.83572,6.794774 18.294359,6.447516 z"
+       fill="none"
+       stroke="#ffffff"
+       stroke-width="0.2" />
+    
+    <!-- Additional detail paths -->
+    <path
+       d="m 57.679321,63.480331 4.245388,-6.028659 6.458628,13.242772 z"
+       fill="none"
+       stroke="#ffffff"
+       stroke-width="0.2" />
+    
+    <path
+       d="m 21.622071,70.694454 26.290612,-15.57057 11.237011,0.06669 z"
+       fill="none"
+       stroke="#ffffff"
+       stroke-width="0.2" />
+    
+    <path
+       d="M 59.445653,52.36864 36.75941,39.657397 42.652714,37.387452 Z"
+       fill="none"
+       stroke="#ffffff"
+       stroke-width="0.2" />
+    
+    <path
+       d="M 68.383337,70.694454 50.088998,64.247132 57.679321,63.480331 Z"
+       fill="none"
+       stroke="#ffffff"
+       stroke-width="0.2" />
+    
+    <path
+       d="M 21.622071,71.223621 47.912683,55.653051 34.268812,45.293193 Z"
+       fill="none"
+       stroke="#ffffff"
+       stroke-width="0.2" />
+    
+    <path
+       d="M 59.445643,52.36864 42.652714,37.387452 45.002437,22.756188 Z"
+       fill="none"
+       stroke="#ffffff"
+       stroke-width="0.2" />
+  </g>
+</svg>

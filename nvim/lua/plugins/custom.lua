@@ -113,7 +113,12 @@ return {
     "eandrju/cellular-automaton.nvim",
   },
   { "nvzone/volt", lazy = true },
-
+  {
+    "folke/snacks.nvim",
+    opts = {
+      explorer = { enabled = false },
+    },
+  },
   {
     "nvzone/minty",
     cmd = { "Shades", "Huefy" },

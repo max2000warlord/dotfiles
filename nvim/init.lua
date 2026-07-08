@@ -1,6 +1,4 @@
 -- bootstrap lazy.nvim, LazyVim and your plugins
-vim.g.clipboard = "osc52"
-vim.opt.clipboard = "unnamedplus"
 require("config.lazy")
 require("neo-tree").setup({
   window = {
@@ -44,4 +42,5 @@ vim.api.nvim_create_autocmd("FileType", {
   end,
 })
 
+vim.cmd.colorscheme("cyberdream")
 require("colorizer").setup()
