@@ -1,0 +1,62 @@
+[bar.default]
+font_family = "Hack Nerd Font"
+font_weight = 400
+padding = 0
+thickness = 40
+
+[lockscreen_widgets]
+enabled = false
+schema_version = 2
+widget_order = [ "lockscreen-login-box@eDP-1" ]
+
+    [lockscreen_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@eDP-1"]
+    box_height = 70.0
+    box_width = 400.0
+    cx = 960.0
+    cy = 961.0
+    output = "eDP-1"
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@eDP-1".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_password_hint = true
+
+[plugins]
+enabled = [ "jinliu/imagemagick-clock" ]
+
+[shell]
+font_family = "Hack Nerd Font"
+
+[theme]
+source = "wallpaper"
+wallpaper_scheme = "m3-tonal-spot"
+
+[wallpaper]
+directory = "/home/max/Pictures/Wallpapers"
+
+    [wallpaper.default]
+    path = "/home/max/Pictures/Wallpapers/Futuristic/p8qpkm.png"
+
+    [wallpaper.last]
+    path = "/home/max/Pictures/Wallpapers/Futuristic/p8qpkm.png"
+
+[widget.clock]
+anchor = true
+color = "primary"
+font_family = "Ticking Timebomb BB"
+font_weight = 400
+icon_color = "primary"

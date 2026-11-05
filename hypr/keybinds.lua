@@ -4,7 +4,7 @@
 
 -- Set programs that you use
 local terminal = "ghostty"
-local browser = "zen-browser"
+local browser = "brave-origin"
 local fileManager = "thunar"
 local menu = "rofi -show drun"
 local code = "neovide"
@@ -23,6 +23,7 @@ local ctrlMod = "SUPER + CTRL" -- Sets "Windows" + "Ctrl" as combo modifier
 hl.bind(mainMod .. " + X", hl.dsp.exec_cmd(terminal))
 hl.bind(mainMod .. " + C", hl.dsp.exec_cmd(browser))
 hl.bind(comboMod .. " + X", hl.dsp.exec_cmd(code))
+hl.bind(altComboMod .. " + X", hl.dsp.exec_cmd("cool-retro-term"))
 local closeWindowBind = hl.bind(comboMod .. " + Q", hl.dsp.window.close())
 -- closeWindowBind:set_enabled(false)
 hl.bind(
@@ -31,6 +32,7 @@ hl.bind(
 )
 hl.bind(comboMod .. " + F", hl.dsp.exec_cmd(fileManager))
 hl.bind(comboMod .. " + L", hl.dsp.exec_cmd(lock))
+hl.bind(comboMod .. " + G", hl.dsp.exec_cmd("glava"))
 hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mainMod .. " + D", hl.dsp.exec_cmd(menu))
 hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())

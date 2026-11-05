@@ -5,16 +5,52 @@ foreground = "#f1dedd"
 black = "#000000"
 red = "#ffd2cc"
 green = "#f9d8a0"
-yellow = "#fed2cf"
+yellow = "#fed2ce"
 blue = "#ffd2ce"
-magenta = "#a98d5b"
+magenta = "#a88d5b"
 cyan = "#ad8885"
 white = "#534342"
 bright_black = "#c2adab"
 bright_red = "#ff5449"
-bright_green = "#ffdea7"
+bright_green = "#ffdea6"
 bright_yellow = "#ffdad7"
 bright_blue = "#ffdad7"
 bright_magenta = "#e2c28c"
 bright_cyan = "#e7bdb9"
 bright_white = "#1a1111"
+
+[[themes]]
+name = "cyberdream"
+[themes.palette]
+foreground = "#ffffff"
+black = "#1e2124"
+red = "#ff6e5e"
+green = "#5eff6c"
+yellow = "#f1ff5e"
+blue = "#5ea1ff"
+magenta = "#ff5ef1"
+cyan = "#5ef1ff"
+white = "#7b8496"
+bright_black = "#3c4048"
+bright_red = "#ff6e5e"
+bright_green = "#5eff6c"
+bright_yellow = "#f1ff5e"
+bright_blue = "#5ea1ff"
+bright_magenta = "#ff5ef1"
+bright_cyan = "#5ef1ff"
+bright_white = "#ffffff"
+
+[themes.component_style]
+selection = { bg = "#3c4048", modifiers = ["Bold"] }
+block_title = { fg = "#5ea1ff", modifiers = ["Bold"] }
+playback_track = { fg = "#ffffff", modifiers = ["Bold"] }
+playback_album = { fg = "#ffbd5e" }
+playback_metadata = { fg = "#7b8496" }
+playback_progress_bar = { bg = "#3c4048", fg = "#bd5eff" }
+current_playing = { fg = "#5eff6c", modifiers = ["Bold"] }
+page_desc = { fg = "#5ea1ff", modifiers = ["Bold"] }
+table_header = { fg = "#5ea1ff", modifiers = ["Bold"] }
+border = { fg = "#7b8496" }
+playback_status = { fg = "#bd5eff", modifiers = ["Bold"] }
+playback_artists = { fg = "#5ef1ff", modifiers = ["Bold"] }
+playlist_desc = { fg = "#7b8496" }

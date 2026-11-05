@@ -1,6 +1,6 @@
 [
   {
-    //    "include": "/usr/share/zig-waybar-contrib/config.jsonc",
+    "include": "/usr/share/zig-waybar-contrib/config.jsonc",
     "layer": "top", // Waybar at top layer
     "position": "top", // Waybar position (top|bottom|left|right)
     "margin-top": 5,
@@ -27,6 +27,7 @@
       "pulseaudio",
       "custom/media",
       "custom/power",
+      "custom/claudebar",
       "tray"
     ],
     "bar_id": "bar-0",
@@ -204,14 +205,6 @@
       "format": "{icon} {percent}%",
       "format-icons": ["", "", "", "", "", "", "", "", ""]
     },
-    //"custom/brightness": {
-    //  "exec": "ddcutil -d 1 getvcp 10 | awk -F'=|,' '{print $2\"%\"}'",
-    //  "interval": 2,
-    //  "on-scroll-up": "ddcutil -d 2 setvcp 10 + 10",
-    //  "on-scroll-down": "ddcutil -d 2 setvcp 10 - 10",
-    //  "format": "{icon} {percent}%",
-    //  "format-icons": ["", "", "", "", "", "", "", "", ""]
-    //},
     "custom/protonmail": {
       "exec": "bar-protonmail",
       "return-type": "json",
@@ -238,6 +231,14 @@
       "max-length": 8,
       "tooltip": false
     },
+    "custom/claudebar": {
+      "exec": "~/.local/bin/claudebar",
+      "return-type": "json",
+      "interval": 300,
+      "signal": 13,
+      "tooltip": true,
+      "on-click": "xdg-open https://claude.ai/settings/usage"
+    },
     "network#dlSpeed": {
       "interval": 1,
       "format": "󰜮{bandwidthDownBytes}",
@@ -252,72 +253,4 @@
       "tooltip": false
     }
   }
-  //{
-  //  "layer": "top",
-  //  "hidden": true,
-  //  "width": 1920,
-  //  "output": "HDMI-A-3",
-  //  "modules-center": ["clock"],
-  //  "modules-right": [
-  //    "network#speed",
-  //    "pulseaudio",
-  //    "cpu",
-  //    "memory",
-  //    "temperature"
-  //  ],
-  //  "bar_id": "bar-1",
-  //  "cpu": {
-  //    "format": "{usage}% ",
-  //    "tooltip": false
-  //  },
-  //  "memory": {
-  //    "format": "{}% "
-  //  },
-  //  "temperature": {
-  //    // "thermal-zone": 2,
-  //    // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
-  //    "critical-threshold": 80,
-  //    // "format-critical": "{temperatureC}°C {icon}",
-  //    "format": "{temperatureC}°C {icon}",
-  //    "format-icons": ["", "", ""]
-  //  },
-  //  "network": {
-  //    // "interface": "wlp2*", // (Optional) To force the use of this interface
-  //    "format-wifi": "{essid} ({signalStrength}%) ",
-  //    "format-ethernet": "{ipaddr}/{cidr} 󰈀",
-  //    "tooltip-format": "{ifname} via {gwaddr} ",
-  //    "format-linked": "{ifname} (No IP) ",
-  //    "format-disconnected": "Disconnected ⚠",
-  //    "format-alt": "{ifname}: {ipaddr}/{cidr}"
-  //  },
-  //  "pulseaudio": {
-  //    // "scroll-step": 1, // %, can be a float
-  //    "format": "{volume}% {icon} {format_source}",
-  //    "format-bluetooth": "{volume}% {icon} {format_source}",
-  //    "format-bluetooth-muted": " {icon} {format_source}",
-  //    "format-muted": " {format_source}",
-  //    "format-source": "{volume}% ",
-  //    "format-source-muted": "",
-  //    "format-icons": {
-  //      "headphone": "",
-  //      "hands-free": "",
-  //      "headset": "",
-  //      "phone": "",
-  //      "portable": "",
-  //      "car": "",
-  //      "default": [" ", " ", " "]
-  //    },
-  //    "on-click": "pavucontrol"
-  //  },
-  //  "network#speed": {
-  //    "interval": 1,
-  //    "format": "󰜮{bandwidthDownBytes} 󰜷{bandwidthUpBytes}",
-  //    "format-disconnected": "Disconnected",
-  //    "format-alt": "{ifname}: {ipaddr}/{cidr}",
-  //    "tooltip-format": "{ifname} via {gwaddr}",
-  //    "tooltip-format-wifi": "{essid} ({signalStrength}%)",
-  //    "tooltip-format-ethernet": "{ifname}",
-  //    "tooltip-format-disconnected": "Disconnected"
-  //  }
-  //}
 ]

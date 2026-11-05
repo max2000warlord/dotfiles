@@ -37,6 +37,10 @@ contrast = 0.5
 #[templates.colors-jsonc]
 #input_path = "~/.config/matugen/templates/colors.lua"
 #output_path = "~/.cache/matugen/colors.lua"
+[templates.claudebar]
+input_path = '~/!conf/matugen/templates/claudebar.jsonc'
+output_path = '~/.cache/claudebar/colors.jsonc'
+post_hook = 'pkill -RTMIN+13 waybar'
 
 [templates.ghostty]
 input_path = "~/!conf/matugen/templates/ghostty"
@@ -49,15 +53,15 @@ output_path = "~/!conf/hypr/colors.lua"
 
 [templates.nvim]
 input_path = "~/!conf/matugen/templates/nvim.jsonc"
-output_path = '~/.cache/matugen/colors.jsonc'
+output_path = '~/.cache/matugen/nvim-colors.jsonc'
 
 [templates.rofi]
 input_path = "~/!conf/matugen/templates/rofi.rasi"
 output_path = "~/!conf/rofi/themes/matugen.rasi"
 
-[templates.spotify-player]
-input_path = "~/!conf/matugen/templates/spotify-player.toml"
-output_path = "~/!conf/spotify-player/theme.toml"
+#[templates.spotify-player]
+#input_path = "~/!conf/matugen/templates/spotify-player.toml"
+#output_path = "~/!conf/spotify-player/theme.toml"
 
 [templates.waybar]
 input_path = "~/!conf/matugen/templates/waybar.css"
@@ -90,7 +94,7 @@ index = 1
 
 # Defaults to the type from CLI if unspecified.
 # One of `SchemeContent`, `SchemeExpressive`, `SchemeFidelity`, `SchemeFruitSalad`, `SchemeMonochrome`, `SchemeNeutral`, `SchemeRainbow`, `SchemeTonalSpot`, `SchemeVibrant`
-type = "SchemeTonalSpot"
+type = "SchemeRainbow"
 
 # For testing of the `--continue-on-error` flag
 # [templates.ishoulderror]

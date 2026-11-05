@@ -1,105 +1,105 @@
 local colors = {
-    image = "/home/max/Pictures/Wallpapers/Futuristic/wallhaven-p8qpkm.jpg",
+    image = "/home/max/Pictures/Wallpapers/Synthwave/kanagawa-synth.png",
 
-    background = "#1a1111",
+    background = "#191113",
 
     error = "#ffd2cc",
 
     error_container = "#ff5449",
 
-    inverse_on_surface = "#322827",
+    inverse_on_surface = "#31282a",
 
-    inverse_primary = "#743431",
+    inverse_primary = "#713448",
 
-    inverse_surface = "#f1dedd",
+    inverse_surface = "#efdfe1",
 
-    on_background = "#f1dedd",
+    on_background = "#efdfe1",
 
     on_error = "#540003",
 
     on_error_container = "#000000",
 
-    on_primary = "#481312",
+    on_primary = "#471226",
 
     on_primary_container = "#000000",
 
-    on_primary_fixed = "#2c0103",
+    on_primary_fixed = "#2b0011",
 
-    on_primary_fixed_variant = "#5e2321",
+    on_primary_fixed_variant = "#5c2236",
 
-    on_secondary = "#381f1d",
+    on_secondary = "#361f25",
 
     on_secondary_container = "#000000",
 
-    on_secondary_fixed = "#200b0a",
+    on_secondary_fixed = "#1f0b11",
 
-    on_secondary_fixed_variant = "#4b2f2d",
+    on_secondary_fixed_variant = "#492f36",
 
     on_surface = "#ffffff",
 
-    on_surface_variant = "#eed7d5",
+    on_surface_variant = "#ecd7db",
 
-    on_tertiary = "#342300",
+    on_tertiary = "#3a1f03",
 
     on_tertiary_container = "#000000",
 
-    on_tertiary_fixed = "#1a0f00",
+    on_tertiary_fixed = "#1e0d00",
 
-    on_tertiary_fixed_variant = "#473309",
+    on_tertiary_fixed_variant = "#4e2f10",
 
-    outline = "#c2adab",
+    outline = "#c0adb1",
 
-    outline_variant = "#9f8c8a",
+    outline_variant = "#9e8c8f",
 
-    primary = "#ffd2ce",
+    primary = "#ffd0db",
 
-    primary_container = "#cb7b76",
+    primary_container = "#c67b90",
 
-    primary_fixed = "#ffdad7",
+    primary_fixed = "#ffd9e1",
 
-    primary_fixed_dim = "#ffb3ae",
+    primary_fixed_dim = "#ffb1c6",
 
     scrim = "#000000",
 
-    secondary = "#fed2cf",
+    secondary = "#fad2db",
 
-    secondary_container = "#ad8885",
+    secondary_container = "#aa8890",
 
-    secondary_fixed = "#ffdad7",
+    secondary_fixed = "#ffd9e1",
 
-    secondary_fixed_dim = "#e7bdb9",
+    secondary_fixed_dim = "#e3bdc5",
 
     shadow = "#000000",
 
-    source_color = "#f1323a",
+    source_color = "#f2508d",
 
-    surface = "#1a1111",
+    surface = "#191113",
 
-    surface_bright = "#4d4241",
+    surface_bright = "#4c4244",
 
-    surface_container = "#302525",
+    surface_container = "#2f2628",
 
-    surface_container_high = "#3b302f",
+    surface_container_high = "#3a3032",
 
-    surface_container_highest = "#463b3a",
+    surface_container_highest = "#453b3d",
 
-    surface_container_low = "#251b1b",
+    surface_container_low = "#241b1d",
 
-    surface_container_lowest = "#0d0605",
+    surface_container_lowest = "#0c0607",
 
-    surface_dim = "#1a1111",
+    surface_dim = "#191113",
 
-    surface_tint = "#ffb3ae",
+    surface_tint = "#ffb1c6",
 
-    surface_variant = "#534342",
+    surface_variant = "#514346",
 
-    tertiary = "#f9d8a0",
+    tertiary = "#ffd4b1",
 
-    tertiary_container = "#a98d5b",
+    tertiary_container = "#b38861",
 
-    tertiary_fixed = "#ffdea7",
+    tertiary_fixed = "#ffdcc0",
 
-    tertiary_fixed_dim = "#e2c28c",
+    tertiary_fixed_dim = "#eebd93",
 
 }
 

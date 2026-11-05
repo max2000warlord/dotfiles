@@ -17,6 +17,14 @@ local suppressMaximizeRule = hl.window_rule({
 -- suppressMaximizeRule:set_enabled(false)
 
 hl.window_rule({
+	match = {
+		class = "cool-retro-term",
+		title = "Settings",
+	},
+	float = true,
+})
+
+hl.window_rule({
 	-- Fix some dragging issues with XWayland
 	name = "fix-xwayland-drags",
 	match = {
@@ -97,8 +105,16 @@ hl.window_rule({
 	center = true,
 })
 
+hl.window_rule({
+	match = {
+		class = "brave-origin",
+		title = "Picture-in-picture",
+	},
+	float = true,
+})
+
 -- No border: Ghostty, Neovide, GLava
-local noborders = { "com.mitchellh.ghostty", "neovide" }
+local noborders = { "com.mitchellh.ghostty", "cool-retro-term" }
 
 for _, nb in ipairs(noborders) do
 	hl.window_rule({
@@ -116,7 +132,7 @@ for _, nsh in ipairs(noshadows) do
 	})
 end
 
-local lr = { "waybar", "rofi" }
+local lr = { "waybar", "rofi", "com.mitchelh.ghostty" }
 
 for _, ns in ipairs(lr) do
 	hl.layer_rule({

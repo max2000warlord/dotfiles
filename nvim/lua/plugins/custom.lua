@@ -97,16 +97,7 @@ return {
   {
     "norcalli/nvim-colorizer.lua",
     config = function()
-      require("colorizer").setup({
-        conf = {
-          RGB = true, -- #RGB hex codes
-          RRGGBB = true, -- #RRGGBB hex codes
-          RRGGBBAA = true, -- #RRGGBBAA hex codes
-          names = true, -- "red", "blue", etc
-          css = false,
-          css_fn = false,
-        },
-      })
+      require("colorizer").setup()
     end,
   },
   {

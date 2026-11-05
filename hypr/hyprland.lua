@@ -73,8 +73,8 @@ hl.config({
 		enforce_permissions = true,
 	},
 	general = {
-		gaps_in = 5,
-		gaps_out = 10,
+		gaps_in = 3,
+		gaps_out = 6,
 		border_size = 3,
 		col = {
 			active_border = { colors = { colors.source_color, colors.primary_container }, angle = 45 },
